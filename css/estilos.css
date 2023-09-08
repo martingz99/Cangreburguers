@@ -1,0 +1,360 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Rubik', sans-serif;
+    font-size: 16px;
+}
+
+.contenedor{
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+
+header{
+    width: 100%;
+    background: url('../img/burga1.jpg') #493323;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center 0;
+}
+
+header .contenedor{
+    position: relative;
+    height: 700px;
+}
+
+header .menu{
+    width: 100%;
+    text-align: right;
+}
+
+header .menu a{
+    color: aliceblue;
+    font-size: 20px;
+    font-weight: 300;
+    display: inline-block;
+    margin: 40px 20px;
+    position: relative;
+    text-decoration: none;
+}
+
+header .menu a:hover{
+    text-decoration: underline;
+}
+
+header .textos{
+    width: 100%;
+    color: aliceblue;
+    position: absolute;
+    top: 50%;
+    margin-top: -52px;
+}
+
+header .textos .nombre{
+    font-size: 50px;
+    font-weight: 600;
+    text-shadow: 2px 2px #493323;
+}
+
+header .textos .nombre span{
+    font-weight: 700;
+}
+
+header .textos h3{
+    font-weight: 300;
+    font-size: 25px;
+    font-style: italic;
+    text-shadow: 2px 2px #493323;
+}
+
+.main{
+    background: url('../img/subtle_white_feathers/subtle_white_feathers.png');
+    background-repeat: repeat;
+}
+
+.main .inicio .contenedor{
+    overflow: visible;
+    position: relative;
+}
+
+.main .inicio .foto img{
+    width: 50%;
+    margin-top: -50px;
+    position:absolute;
+    z-index: 0;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, .40);
+    vertical-align: top;
+}
+
+.main .inicio .article{
+    background: white;
+    padding: 40px;
+    width: 40%;
+    position:relative;
+    z-index: 1;
+    float: right;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, .40);
+    margin-top: 100px;
+    top: 240px;
+}
+.main .inicio .article h3{
+    font-weight: 50px;
+    font-weight: 300px;
+    margin-bottom: 40px;
+}
+
+.main .inicia .article p{
+    line-height: 28px;
+    margin-top: 40px;
+}
+
+.main .menu{
+    margin-bottom: 50px;
+}
+
+.main .menu .titulo{
+    font-size: 40px;
+    font-weight: 300;
+    text-align: center;
+}
+
+.main .menu .contenedor-menu,
+.main .menu .contenedor-menu2 {
+    border: 1px solid rgb(10, 10, 12);
+    background: transparent;
+    padding: 10px;
+    overflow: hidden;
+}
+
+.main .menu article{
+    width: 50%;
+    float: left;
+    padding: 20px;
+}
+
+.main .menu .categoria{
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.main .menu .platillo{
+    margin-bottom: 30px;
+    padding-bottom:20px;
+    border-bottom: 4px dotted black;
+}
+
+.main .menu .nombre{
+    font-size: 20px;
+    margin-bottom: 15px;
+    float: left;
+}
+
+.main .menu .precio{
+    font-size: 20px;
+    margin-bottom: 15px;
+    float: right;
+}
+
+.main .menu .descripcion{
+    font-size: 16px;
+    color: #676767;
+    clear:both;
+}
+
+.main .galeria{
+    overflow: hidden;
+}
+
+.main .galeria .foto{
+    width: 25%;
+    float: left;
+}
+
+.main .galeria .foto img{
+    width: 100%;
+    vertical-align: top;
+    opacity: 0.7;
+    height: 300px;
+}
+
+.main .galeria .foto img:hover{
+    opacity: 1;
+    transition: all .3s ease;
+}
+
+.main .ubicacion{
+    padding: 60px 0px;
+}
+
+.main .ubicacion .titulo{
+    text-align: center;
+    font-size: 40px;
+    line-height: 40px;
+    font-weight: 300;
+    margin-bottom: 40px;
+}
+
+.main .ubicacion .direccion{
+    float: left;
+    width: 50%;
+    text-align: left;
+}
+
+.main .ubicacion .horarios{
+    float: right;
+    width: 50%;
+    text-align: right;
+}
+
+.main .ubicacion .direccion .calle{
+    margin-bottom: 15px;
+} 
+
+.main .ubicacion .horarios h4{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.main .ubicacion .horarios .entre-semana,
+.main .ubicacion .horarios .fin-semana
+{
+    width: 50%;
+    float: left;
+    text-align: center;
+}
+
+.main .mapa{
+    width: 100%;
+    overflow: hidden;
+}
+
+.main .main iframe{
+    width: 100%;
+    max-height: 600px;
+}
+
+footer{
+    background: #1e212d;
+}
+
+footer .contenedor .copyright{
+    vertical-align: top;
+    text-align: center;
+    padding: 15px 0;
+    color: aliceblue;
+}
+
+@media screen and (max-width: 800px){
+
+    header .contenedor{
+        height: auto;
+        height: 600px;
+    }
+
+    header .textos{
+        /*position: static;
+        margin: 100px 0px;
+        width: 100%;*/
+        color: aliceblue;
+        position: absolute;
+        top: 50%;
+        margin-top: -52px;
+        padding-right: 40px;
+    }
+
+    header .menu{
+        text-align: center;
+    }
+
+    header .menu a{
+        margin: 10px 20px;
+    }
+
+    header .textos .nombre{
+        font-size: 30px;
+    }
+
+    header .textos h3{
+        font-size: 18px;
+    }
+
+    .main .inicio .foto img{
+        width: 90%;
+        position:absolute;
+    }
+
+    .main .inicio .article{
+        position: relative;
+        width: 100%;
+        top: 50px;
+        margin-bottom: 100px;
+        transform: translate(0px, 0);
+    }
+
+    .main .menu article{
+        width: 100%;
+    }
+
+    .main .galeria .foto{
+        width: 50%;
+    }
+
+    .main .mapa{
+        width: 90%;
+        margin: auto;
+        margin: 1px solid grey;
+    }
+}
+
+
+@media screen and (max-width: 400px){
+    .main .inicio .article h3 {
+        font-size: 34px;
+        margin-bottom: 10px;
+    }
+
+    .main .inicio .foto img{
+        width: 90%;
+        position:absolute;
+    }
+
+    .main .inicio .article{
+        position: relative;
+        width: 100%;
+        top: -20px;
+        margin-bottom: 100px;
+        transform: translate(0px, 0);
+    }
+
+    .main .menu{
+        margin-top: -80px;
+    }
+
+    .main .menu .article .nombre,
+    .main .menu .article .precio{
+        font-size: 16px;
+        line-height: 16px;
+    }
+
+    .main .ubicacion .direccion,
+    .main .ubicacion .horarios{
+        width: 100%;
+        text-align: center;
+    }
+
+    .main .ubicacion .horarios{
+        margin-top: 25px;
+    }
+
+    .main .galeria .foto{
+        width: 100%;
+    }
+}
